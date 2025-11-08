@@ -1,11 +1,54 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/stylesheets/style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>My Portfolio</h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/blogs">Blogs</a>
+      <a href="/contact">Contact</a>
+      <a href="https://github.com/Raz7575" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/reshad-safi-50b564391/" target="_blank">LinkedIn</a>
+    </nav>
+  </header>
+
+  <section id="home" class="intro">
+    <img src="/images/profile.jpg" alt="My photo" class="profile-pic" />
+    <h2>Welcome to My Portfolio!</h2>
+    <p>Hi, I’m Reshad Safi — a web developer who enjoys building responsive, modern, and user-friendly websites. Scroll down to explore my work or check out my blog posts!</p>
+  </section>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+
+    <div class="project">
+      <img src="/images/project1.jpg" alt="Responsive Portfolio Project">
+      <h3>Responsive Portfolio Website</h3>
+      <p>This site uses breakpoints for phones, tablets, and desktops, with gradients and clean color schemes for a modern look.</p>
+    </div>
+
+    <div class="project">
+      <img src="/images/project2.jpg" alt="Accessibility Project">
+      <h3>Accessibility & Validation</h3>
+      <p>Validated HTML, CSS, and accessibility with W3C and WAVE tools to ensure high standards and usability.</p>
+    </div>
+
+    <div class="project">
+      <img src="/images/project3.jpg" alt="UI Project">
+      <h3>UI Redesign</h3>
+      <p>Modern design focused on gradient usage, interactivity, and device responsiveness inspired by popular UI trends.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 My Portfolio | Built with Express & EJS</p>
+  </footer>
+
+</body>
 </html>
